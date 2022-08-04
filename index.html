@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Library</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #e4e4e4e7">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <a class="navbar-brand" href="#">Gaurav Library</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div id="message">
+
+  </div>
+  <div class="container my-5">
+    <h1>GAURAV'S LIBRARY</h1>
+    <hr>
+    <form id="LibraryForm">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Your Name... ">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="number">Reg.Number</label>
+          <input type="numbsger" class="form-control" id="number" placeholder="Enter Register Number..">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="bookName">Book Name</label>
+        <input type="text" class="form-control" id="bookName" placeholder="Enter Book Name...">
+      </div>
+      <div class="form-group">
+        <label for="authorName">Author Name</label>
+        <input type="text" class="form-control" id="authorName" placeholder="Enter Author Name...">
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="bookType">Type</label>
+          <input type="text" class="form-control" id="bookType" placeholder="Enter Book type...">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="issueDate">Issue Date</label>
+          <input type="text" class="form-control" id="issueDate" >
+        </div>
+        <div class="form-group col-md-3">
+          <label for="returnDate">Return Date</label>
+          <input type="text" class="form-control" id="returnDate" >
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" id="addBtn">Add Book</button>
+    </form>
+    <hr>
+    <h1>Student list</h1>
+    <hr>
+    <table class="table table-bordered table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">RegNo</th>
+          <th scope="col">Book</th>
+          <th scope="col">Author</th>
+          <th scope="col">Type</th>
+          <th scope="col">Issue Date</th>
+          <th scope="col">Return Date</th>
+          <th scope="col">Delete Details</th>
+        </tr>
+      </thead>
+      <tbody id="tabledata">
+      </tbody>
+    </table>
+  </div>
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
